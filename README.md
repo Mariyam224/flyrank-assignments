@@ -24,7 +24,7 @@ This repository documents my learning journey through the FlyRank Front-end AI E
 
 ## Repository Structure
 
-Each assignment will be organized in its own folder as the internship progresses.
+Assignments live in numbered folders at the repo root:
 
 ## Author
 
