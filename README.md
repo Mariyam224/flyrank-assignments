@@ -26,6 +26,8 @@ This repository documents my learning journey through the FlyRank Front-end AI E
 
 Assignments live in numbered folders at the repo root:
 
+The capstone project will be in `capstone/` when complete.
+
 ## Author
 
 **Mariyam Imran**
