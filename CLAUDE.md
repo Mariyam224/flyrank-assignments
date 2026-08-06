@@ -47,3 +47,11 @@ Examples:
 - refactor:
 - test:
 - chore:
+
+## Project Rules Learned
+
+1. Always ask the AI to explain its implementation plan before generating code.
+2. Specify the exact files that should be created or modified to avoid unnecessary changes.
+3. Require accessibility for all forms, including labels and keyboard navigation.
+4. Ask the AI to verify its implementation against the requirements before considering the task complete.
+5. Review all AI-generated code manually before committing.
