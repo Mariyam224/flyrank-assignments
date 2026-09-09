@@ -1,0 +1,27 @@
+.favourites {
+  padding: 24px;
+}
+
+.favourites-status,
+.favourites-empty {
+  text-align: center;
+  color: #6b7280;
+  font-size: 15px;
+  padding: 32px 0;
+}
+
+.favourites-error {
+  text-align: center;
+  color: #b91c1c;
+  font-size: 15px;
+  padding: 32px 0;
+}
+
+.movie-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
