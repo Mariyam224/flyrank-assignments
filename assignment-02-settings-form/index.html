@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="card" aria-labelledby="settings-heading">
+        <header class="card__header">
+          <h1 id="settings-heading">Account Settings</h1>
+          <p>Update your profile and preferences.</p>
+        </header>
+
+        <form id="settings-form" class="form" novalidate>
+          <div class="field">
+            <label for="fullName">
+              Full Name
+              <span class="required" aria-hidden="true">*</span>
+            </label>
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              autocomplete="name"
+              required
+              aria-required="true"
+              aria-invalid="false"
+              aria-describedby="fullName-error"
+            />
+            <p id="fullName-error" class="field-error" role="alert"></p>
+          </div>
+
+          <div class="field">
+            <label for="email">
+              Email
+              <span class="required" aria-hidden="true">*</span>
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="email"
+              required
+              aria-required="true"
+              aria-invalid="false"
+              aria-describedby="email-error"
+            />
+            <p id="email-error" class="field-error" role="alert"></p>
+          </div>
+
+          <div class="field">
+            <label for="password">
+              Password
+              <span class="required" aria-hidden="true">*</span>
+            </label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              autocomplete="new-password"
+              required
+              aria-required="true"
+              aria-invalid="false"
+              aria-describedby="password-error"
+            />
+            <p id="password-error" class="field-error" role="alert"></p>
+          </div>
+
+          <fieldset class="theme-fieldset">
+            <legend>Theme</legend>
+            <div class="theme-options" role="radiogroup" aria-label="Theme">
+              <div class="theme-option">
+                <input
+                  type="radio"
+                  id="theme-light"
+                  name="theme"
+                  value="light"
+                  checked
+                />
+                <label for="theme-light">Light</label>
+              </div>
+              <div class="theme-option">
+                <input
+                  type="radio"
+                  id="theme-dark"
+                  name="theme"
+                  value="dark"
+                />
+                <label for="theme-dark">Dark</label>
+              </div>
+            </div>
+          </fieldset>
+
+          <div
+            id="success-message"
+            class="success-message"
+            role="status"
+            aria-live="polite"
+            hidden
+          >
+            <p class="success-message__title">Settings saved successfully!</p>
+            <p class="success-message__text">
+              Your preferences have been submitted.
+            </p>
+          </div>
+
+          <button type="submit" id="submit-btn" class="submit-btn" disabled>
+            Save Settings
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
